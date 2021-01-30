@@ -1,7 +1,7 @@
 from flask import Flask
 app = Flask(__name__)
 
-moje_imie = 'Natalia'
+moje_imie = 'Beata'
 
 @app.route('/')
 def hello_world():
@@ -15,3 +15,7 @@ def kto():
 @app.route('/wiadomosc')
 def wiadomosc():
     return 'Hello, World!'
+
+@app.route('/miasto')
+def miasto():
+    return 'Wroclaw'
